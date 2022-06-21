@@ -1,7 +1,7 @@
 function openNav(){
-    document.getElementById("items").style.width = "250px";
-    document.getElementById("sidebar-close").style.marginRight = "100px";
-
+    document.getElementById("items").style.width = "25%";
+    document.getElementById("sidebar-close").classList.remove("header-sidebar__btn--invis");
+    document.getElementById("sidebar-close").style.marginRight = "25%";
 }
 
 function closeNav(){

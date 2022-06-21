@@ -17,6 +17,7 @@
 .header{
     position: sticky;
     top: 30px;
+    z-index: 1;
 }
 
 .header-sidebar{
@@ -26,11 +27,16 @@
 .header-sidebar__btn{
     font-size: 20px;
     cursor: pointer;
-    padding: 10px 15px;
     border: none;
+    width: 50px;
+    height: 50px;
     margin-left: 100%;
-    background-color: #111;
+    background-color: black;
     color: white;
+}
+
+.header-sidebar__btn--invis{
+    visibility: hidden;
 }
 
 .header-items {

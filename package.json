@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "open": "concurrently \"nodemon app.js\" \"opener http://localhost:8080/index.html"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.2",
+    "nodemon": "^2.0.16",
+    "opener": "^1.5.2"
+  }
+}
