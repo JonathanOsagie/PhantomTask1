@@ -11,19 +11,24 @@
         <header class="header">
             <div class="inner">
                 <div class="header-sidebar" id="sidebar-open">
-                    <button class="header-sidebar__btn" onclick="openNav()">
+                    <a class="header-sidebar__btn" onclick="openNav()">
                         ☰
-                    </button>
+                    </a>
                 </div>
-                <div class ="header-sidebar header-sidebar__btn--invis" id="sidebar-close">
-                    <button class="header-sidebar__btn " onclick="closeNav()">
-                        ×
-                    </button>
-                </div>
-
                 <div class="header-items" id="items">
-                    <a class="a header-items--a " href="#">Home</a>
-                    <a class="a header-items--a " href="#">numberOne</a>
+                    <div class="header-items-close">
+                        <a class="header-items-close-content" onclick="closeNav()">
+                            <div class="header-items-close-content__icon"> 
+                                x
+                            </div>
+                        </a>
+                    </div>
+                    <div class="header-items-elements">
+                        <h1 class="a header-items-elements__title">Menu</h1>
+                        <a class="a header-items-elements__text header-items__text--bottomBorder" href="#">Home</a>
+                        <a class="a header-items-elements__text header-items__text--bottomBorder" href="#">Ipsum veroeros</a>
+                        <a class="a header-items-elements__text" href="#">Tempus etiam</a>
+                    </div>   
                 </div>
             </div>
         </header>
