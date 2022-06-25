@@ -73,6 +73,7 @@
     color: #585858;
     position: absolute;
     text-align: right;
+    cursor:default;
 }
 
 .header-items-close-content__icon{
@@ -82,6 +83,7 @@
 
 .header-items-close-content__icon:hover{
     color: red;
+    cursor: pointer;
 }
 
 .header-items-elements{
@@ -124,7 +126,7 @@
 
 .main-tiles-tile{
     width: calc(33.33333% - 2.5em);
-    min-height: 30px;
+    /* min-height: 30px; */
     aspect-ratio: 1 / 1;
     margin: 2.5em 2.5em 2.5em 0;
     border-radius: 5px;
@@ -135,6 +137,51 @@
     background-size: cover;  
 }
 
+.style--red{
+    background: rgba(255, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.style--red:hover{
+    background: rgba(255, 0, 0, 0);
+}
+
+.style--blue{
+    background: rgba(0, 0, 255, 0.3);
+    transition: 0.3s;
+}
+
+.style--blue:hover{
+    background: rgba(0, 0, 255, 0);
+}
+
+.style--green{
+    background: rgba(0, 128, 0, 0.3);
+    transition: 0.3s;
+}
+
+.style--green:hover{
+    background: rgba(0, 128, 0, 0);
+}
+
+.style--purple{
+    background: rgba(128, 0, 128, 0.3);
+    transition: 0.3s;
+}
+
+.style--purple:hover{
+    background: rgba(128, 0, 128, 0);
+}
+
+.style--yellow{
+    background: rgba(255, 255, 0, 0.3);
+    transition: 0.3s;
+}
+
+.style--yellow:hover{
+    background: rgba(255, 255, 0, 0);
+}
+
 .main-tiles-tile-content{
     width: 100%;
     height: 100%;
@@ -143,6 +190,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.main-tiles-tile-content__title{
+    color: white;
 }
 
 .main-tiles-tile>.main-tiles-tile-content .main-tiles-tile-content__text {
